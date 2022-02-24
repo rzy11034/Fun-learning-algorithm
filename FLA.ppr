@@ -1,0 +1,28 @@
+﻿program FLA;
+
+{$mode objfpc}{$H+}
+
+uses
+ {$IFDEF UNIX}
+  cthreads,
+ {$ENDIF}
+  Classes,
+  SysUtils,
+  DeepStar.Utils,
+  FLA.Main,
+  FLA.Algorithm_01_11,
+  FLA.Algorithm_01_12,
+  FLA.Algorithm_01_13,
+  FLA.Algorithm_01_14, FLA.Algorithm_02_01;
+
+begin
+  try
+    Run;
+    DrawLineProgramEnd;
+    Writeln(END_OF_PROGRAM_EN);
+    Readln;
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+end.
