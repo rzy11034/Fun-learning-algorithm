@@ -84,7 +84,7 @@ begin
   Result := 0;
 
   if left.P <> right.P then
-    Result := IfThen(left.P < right.P, 1, -1);
+    Result := specialize IfThen<integer>(left.P < right.P, 1, -1);
 end;
 
 end.

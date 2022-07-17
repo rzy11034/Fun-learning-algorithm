@@ -14,7 +14,7 @@ uses
   FLA.Algorithm_01_12,
   FLA.Algorithm_01_13,
   FLA.Algorithm_01_14, FLA.Algorithm_02_01, FLA.Algorithm_02_02,
-FLA.Algorithm_02_03;
+FLA.Algorithm_02_03, FLA.Algorithm_02_04;
 
 begin
   try

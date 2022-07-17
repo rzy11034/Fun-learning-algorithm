@@ -118,8 +118,6 @@ begin
     end;
   end;
 
-
-
   WriteLnF('最多可以安排%d个会议。', [_Ans]);
 end;
 
