@@ -10,8 +10,7 @@ uses
   Classes,
   SysUtils,
   Math,
-  DeepStar.Utils,
-  DeepStar.UString;
+  DeepStar.Utils;
 
 procedure Main;
 
@@ -27,9 +26,8 @@ type
 
 const
   N = 5;  // 城市的个数
-  M = 11; // 城市间路线的条数
 
-  EDGES: array[1..M] of TEdge = (
+  EDGES: array of TEdge = (
     (V1: 1; V2: 5; Weight: 12),
     (V1: 5; V2: 1; Weight: 8),
     (V1: 1; V2: 2; Weight: 16),
@@ -43,66 +41,84 @@ const
     (V1: 4; V2: 3; Weight: 19));
 
 var
-  dist: array [1..N] of integer;
-  map: array [1..N, 1..N] of integer;
-  path: array [1..N] of integer;
+  dist, path: TArr_int;
+  map: TArr2D_int;
 
-  // 如果 flag[]等于 true，说明顶点土己经加入到集合s；
+  // 如果 visited[]等于 true，说明顶点土己经加入到集合s；
   // 否则顶点土属于集合 v-s
-  flag: array[1..N] of boolean;
+  visited: TArr_bool;
 
 
 procedure Init;
 var
   i, j, v1, v2: integer;
 begin
-  for i := 1 to N do
+  TArrayUtils_int.SetLengthAndFill(dist, N);
+  TArrayUtils_int.SetLengthAndFill(path, N);
+  TArrayUtils_int.SetLengthAndFill(map, N, N);
+  TArrayUtils_bool.SetLengthAndFill(visited, N);
+
+  for i := 0 to High(map) do
   begin
     dist[i] := MaxInt;
 
-    for j := 1 to N do
+    for j := 0 to High(map) do
       map[i, j] := MaxInt;
 
-    flag[i] := false;
+    visited[i] := false;
     path[i] := -1;
   end;
 
-  for i := 1 to M do
+  for i := 0 to High(EDGES) do
   begin
-    v1 := EDGES[i].V1;
-    v2 := EDGES[i].V2;
+    v1 := EDGES[i].V1 - 1;
+    v2 := EDGES[i].V2 - 1;
 
     map[v1, v2] := Min(map[v1, v2], EDGES[i].Weight);
   end;
 end;
 
-procedure Dijkstra(u: integer);
+procedure Dijkstra(v: integer);
 var
-  i, j, dest, t: integer;
+  i, j, curDis, curIndex: integer;
 begin
-  for i := 1 to N do
+  for i := 0 to N - 1 do
   begin
-    dist[i] := map[u, i];
-    flag[i] := false;
+    dist[i] := MaxInt;
+    visited[i] := false;
 
     if dist[i] = MaxInt then
       path[i] := -1
     else
-      path[i] := u;
+      path[i] := v;
   end;
 
-  dist[u] := 0;
-  flag[u] := true;
+  dist[v] := 0;
+  curIndex := -1;
 
-  for i := 1 to N do
+  while true do
   begin
-    dest := 0;
-    t := 0;
+    curDis := MaxInt;
 
-    if (flag[i] <> true) and (map[u, i] < MaxInt) then
+    for i := 0 to High(map[v]) do
     begin
-      dest := map[u, i];
-      t := i;
+      if (not visited[i]) and (map[v, i] < curDis) then
+      begin
+        curDis := map[v, i];
+        curIndex := i;
+      end;
+    end;
+
+    if curDis = MaxInt then Break;
+
+    visited[curIndex] := true;
+    for j := 0 to High(map[curIndex]) do
+    begin
+      if (curDis < map[curIndex, j] + dist[curIndex]) then
+      begin
+        dist[j] := dist[curIndex] + map[curIndex, j];
+        path[j] := curIndex;
+      end;
     end;
   end;
 end;
@@ -111,9 +127,9 @@ procedure PrintGraph;
 var
   i, j, m: integer;
 begin
-  for i := 1 to N do
+  for i := 0 to High(map) do
   begin
-    for j := 1 to N do
+    for j := 0 to High(map[i]) do
     begin
       m := specialize IfThen<integer>(map[i, j] = MaxInt, 0, map[i, j]);
       WriteF('%4d', [m]);
@@ -128,14 +144,12 @@ type
   TArrayUtils_int64 = specialize TArrayUtils<int64>;
 var
   i: integer;
-  aa: array of int64;
+  a: TArr_int;
 begin
   Init;
   PrintGraph;
-
-  TArrayUtils_int64.SetLengthAndFill(aa, 20);
-
-  Dijkstra(1);
+  Dijkstra(0);
+  TArrayUtils_int.Print(dist);
 end;
 
 end.
