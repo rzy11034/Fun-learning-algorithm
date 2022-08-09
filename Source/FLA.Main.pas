@@ -21,8 +21,21 @@ implementation
 uses
   FLA.Algorithm_03_04;
 
-procedure Test;
+type
+  TArrayOfInteger = array[0..9] of integer;
+  TArr = array of integer;
+
+procedure sw(a: TArr);
 begin
+  a[0] := 1;
+end;
+
+procedure Test;
+var
+  a: TArr;
+begin
+  SetLength(a, 10);
+  sw(a);
   Exit;
 end;
 

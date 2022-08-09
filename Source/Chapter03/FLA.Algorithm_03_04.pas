@@ -45,21 +45,25 @@ type
 
   TMultiply = class(TObject)
   private type
+    TArrayOfChar = array[0..999] of char;
+    TArrayOfInteger = array[0..999] of integer;
+
     TNode = record
-      Nums: IList_int;
+      Nums: TArrayOfInteger;
       Len: integer;
       Pow: integer;
       constructor Create(len, pow: integer);
     end;
 
   private
-    _Num1: TArrayList_int;
-    _Num2: TArrayList_int;
+    _Nums1: TArrayOfChar;
+    _Nums2: TArrayOfChar;
+    _Sum: TArrayOfInteger;
 
     // 将一个 n 位的数分成两个 n/2 的数并存储，并记录它的次幂
     procedure __CP(var src, des: TNode; st, l: integer);
     // 逆序组合 List 到字符串
-    function __NumToString(nums: TArrayList_int): string;
+    function __NumToString(nums: TArrayOfInteger): string;
     // 将字符串逆序转换为 list
     procedure __StringToNumList(s: string; list: TArrayList_int);
 
@@ -74,8 +78,7 @@ type
 
 procedure Main;
 var
-  s: string = '';
-  i: integer;
+  s: string;ss:TMultiply;
 begin
   s := int64.MaxValue.ToString + int64.MaxValue.ToString;
 
@@ -85,29 +88,32 @@ begin
     DrawLineBlockEnd;
     Free;
   end;
+
+  ss := TMultiply.Create ;
+  with ss do
+  begin
+    WriteLn(Multiply('12', '12'));
+    Free;
+  end;
 end;
 
 { Tmultip }
 
 constructor TMultiply.Create;
 begin
-  _Num1 := TArrayList_int.Create;
-  _Num2 := TArrayList_int.Create;
+  inherited Create;
 end;
 
 destructor TMultiply.Destroy;
 begin
-  _Num2.Free;
-  _Num1.Free;
   inherited Destroy;
 end;
 
 function TMultiply.Multiply(num1, num2: string): string;
+var
+  a, b, ans: TNode;
 begin
-  _Num1.Clear;
-  _Num1.Clear;
-  __StringToNumList(num1, _Num1);
-  __StringToNumList(num2, _Num2);
+  __Mul(a, b, ans);
 end;
 
 procedure TMultiply.__ADD(var pa, pb, ans: TNode);
@@ -231,22 +237,22 @@ begin
   __ADD(t1, z, ans);
 end;
 
-function TMultiply.__NumToString(nums: TArrayList_int): string;
+function TMultiply.__NumToString(nums: TArrayOfInteger): string;
 var
   sb: TStringBuilder;
   i: integer;
 begin
-  if (nums = nil) or (nums.IsEmpty) then Exit('0');
-
-  sb := TStringBuilder.Create;
-  try
-    for i := nums.Count - 1 downto 0 do
-      sb.Append(nums[i]);
-
-    Result := sb.ToString;
-  finally
-    sb.Free;
-  end;
+  //if (nums = nil) or (nums.IsEmpty) then Exit('0');
+  //
+  //sb := TStringBuilder.Create;
+  //try
+  //  for i := nums.Count - 1 downto 0 do
+  //    sb.Append(nums[i]);
+  //
+  //  Result := sb.ToString;
+  //finally
+  //  sb.Free;
+  //end;
 end;
 
 procedure TMultiply.__StringToNumList(s: string; list: TArrayList_int);
@@ -255,8 +261,8 @@ var
 begin
   s := s.ReverseString;
 
-  for i := Low(s) to High(s) do
-    list.AddLast(StrToInt(s[i]));
+  //for i := Low(s) to High(s) do
+  //  list.AddLast(StrToInt(s[i]));
 end;
 
 { Tmultip.TNode }
@@ -265,7 +271,6 @@ constructor TMultiply.TNode.Create(len, pow: integer);
 begin
   Self.Len := len;
   Self.Pow := pow;
-  Self.Nums := TArrayList_int.Create(len);
 end;
 
 { TADD }
