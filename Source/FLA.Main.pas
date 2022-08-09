@@ -25,17 +25,17 @@ type
   TArrayOfInteger = array[0..9] of integer;
   TArr = array of integer;
 
-procedure sw(a: TArr);
+procedure sw(var a: TArrayOfInteger);
 begin
   a[0] := 1;
 end;
 
 procedure Test;
 var
-  a: TArr;
+  a: TArrayOfInteger;
 begin
-  SetLength(a, 10);
   sw(a);
+  a := Default(TArrayOfInteger);
   Exit;
 end;
 
