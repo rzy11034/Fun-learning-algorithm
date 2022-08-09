@@ -32,10 +32,20 @@ end;
 
 procedure Test;
 var
-  a: TArrayOfInteger;
+  a: TArrayList_int;
+  b: integer;
 begin
-  sw(a);
-  a := Default(TArrayOfInteger);
+  a := TArrayList_int.Create(0);
+  a.Clear;
+  //while true do
+  //begin
+  //  b := a.Count;
+  //  a.AddLast( 1);
+  //  a.Add(0, 2);
+  //  a[0] := 1;
+  //  a[1] := 1;
+  //end;
+  a.Free;
   Exit;
 end;
 

@@ -45,7 +45,7 @@ type
 
   TMultiply = class(TObject)
   private type
-    TArrayOfChar = array[0..999] of char;
+    //TArrayOfChar = array[0..999] of char;
     TArrayOfInteger = array[0..999] of integer;
 
     TNode = record
@@ -78,7 +78,7 @@ type
 
     procedure __InitList(s: string; list: TArrayList_int);
     function __ListToNum(list: TArrayList_int): string;
-    procedure __ADD(pow: integer);
+    procedure __ADD(num, pow: integer);
     procedure __Mul(num1, num2: TArrayList_int);
 
   public
@@ -110,7 +110,7 @@ begin
 
   with TMultiply_Own.Create do
   begin
-    WriteLn(Multiply('12', '456'));
+    WriteLn(Multiply('11', '11'));
     Free;
   end;
 end;
@@ -148,8 +148,49 @@ begin
   Result := __ListToNum(_Sum);
 end;
 
-procedure TMultiply_Own.__ADD(pow: integer);
+procedure TMultiply_Own.__ADD(num,  pow: integer);
+var
+  i, j, a, b: integer;
+  temp: TArrayList_int;
+  sd, td: integer; // sd: 个位; td:十位
 begin
+  temp := TArrayList_int.Create;
+  try
+    __InitList(IntToStr(num), temp);
+
+    i := 0;
+    j := pow;
+
+    while i < temp.Count do
+    begin
+      a := temp[0];
+      if j < _Sum.Count then
+        b := _Sum[j]
+      else
+        b := 0;
+
+      if j < _Sum.Count then
+      begin
+        sd := (a + b + _Sum[j]) mod 10;
+        td := (a + b + _Sum[j]) div 10;
+        _Sum[j] := sd;
+      end
+      else
+      begin
+        sd := (a + b) mod 10;
+        td := (a + b) div 10;
+        _sum.AddLast(sd);
+      end;
+
+      if td > 0 then
+        _Sum.AddLast(td);
+
+      i += 1;
+      j += 1;
+    end;
+  finally
+    temp.Free;
+  end;
 end;
 
 procedure TMultiply_Own.__InitList(s: string; list: TArrayList_int);
@@ -184,7 +225,9 @@ end;
 
 procedure TMultiply_Own.__Mul(num1, num2: TArrayList_int);
 var
-  largerNum, smallerNum, temp: TArrayList_int;
+  largerNum, smallerNum: TArrayList_int;
+  i, j: integer;
+  a, b, c: integer;
 begin
   largerNum := num1;
   smallerNum := num2;
@@ -193,6 +236,18 @@ begin
   begin
     largerNum := num2;
     smallerNum := num1;
+  end;
+
+  for i := 0 to smallerNum.Count - 1 do
+  begin
+    for j := 0 to largerNum.Count - 1 do
+    begin
+      a := smallerNum[i];
+      b := largerNum[j];
+      c := a * b;
+
+      __ADD(c, i);
+    end;
   end;
 end;
 
