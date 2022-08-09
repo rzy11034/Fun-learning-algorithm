@@ -1,25 +1,34 @@
 ﻿unit FLA.Main;
 
-{$mode ObjFPC}{$H+}
-{$ModeSwitch unicodestrings}
+{$mode delphiunicode}{$j-}
+{$WARN 5023 off : Unit "$1" not used in $2}
 
 interface
 
 uses
   Classes,
   SysUtils,
-  {%H-}Math,
-  {%H-}DeepStar.Utils;
+  Math,
+  DeepStar.DSA.Interfaces,
+  DeepStar.Math,
+  DeepStar.Utils,
+  DeepStar.UString;
 
 procedure Run;
 
 implementation
 
 uses
-  FLA.Algorithm_02_04;
+  FLA.Algorithm_03_04;
+
+procedure Test;
+begin
+  Exit;
+end;
 
 procedure Run;
 begin
+  Test;
   Main;
 end;
 

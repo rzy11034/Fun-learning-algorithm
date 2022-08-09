@@ -25,9 +25,15 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02"/>
+            <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="DelphiUnicode"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
           <CodeGeneration>
             <SmartLinkUnit Value="True"/>
           </CodeGeneration>
@@ -94,6 +100,39 @@
         <Filename Value="Source\Chapter02\FLA.Algorithm_02_04.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter02\FLA.Algorithm_02_05.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter02\FLA.Algorithm_02_06.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter02\FLA.Algorithm_02_07.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter03\FLA.Algorithm_03_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter03\FLA.Algorithm_03_02.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter03\FLA.Algorithm_03_03.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="README.md"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -104,11 +143,12 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02"/>
+      <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
+        <SyntaxMode Value="DelphiUnicode"/>
         <IncludeAssertionCode Value="True"/>
         <UseAnsiStrings Value="False"/>
       </SyntaxOptions>
@@ -130,9 +170,14 @@
         <DebugInfoType Value="dsDwarf3"/>
         <UseHeaptrc Value="True"/>
         <TrashVariables Value="True"/>
-        <UseExternalDbgSyms Value="True"/>
       </Debugging>
     </Linking>
+    <Other>
+      <CompilerMessages>
+        <IgnoredMessages idx4105="True" idx4104="True"/>
+      </CompilerMessages>
+      <CustomOptions Value="-ddebug"/>
+    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions>

@@ -37,7 +37,6 @@ var
   i, n: integer;
 begin
   i := 4;
-
   while i <= 100 do
   begin
     for n := 2 to i - 1 do

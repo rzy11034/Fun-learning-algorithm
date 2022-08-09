@@ -1,4 +1,4 @@
-﻿unit FLA.Algorithm_02_04;
+﻿unit FLA.Algorithm_02_05;
 
 {$mode ObjFPC}{$H+}
 {$ModeSwitch advancedrecords}
@@ -10,8 +10,8 @@ uses
   Classes,
   SysUtils,
   Math,
-  DeepStar.Utils;
-
+  DeepStar.Utils,
+  DeepStar.DSA.Tree.PriorityQueue;
 
 procedure Main;
 
@@ -85,87 +85,42 @@ begin
   end;
 end;
 
-procedure Dijkstra_While(s: integer);
+procedure Dijkstra_PQ(s: integer);
+type
+  TQ = specialize TPriorityQueue<TPair>;
 var
-  v, w, curDist, curIndex: integer;
+  q: TQ;
+  v, w, dis: integer;
 begin
   dist[s] := 0;
 
-  while true do
-  begin
-    curDist := MaxInt;
-    curIndex := -1;
+  q := TQ.Create(q.TCmp.Construct(@TPair.Comparer));
+  try
+    q.EnQueue(TPair.Create(s, 0));
 
-    for v := 1 to N do
+    while not q.IsEmpty do
     begin
-      if (not visited[v]) and (dist[v] < curDist) then
-      begin
-        curDist := dist[v];
-        curIndex := v;
-      end;
-    end;
+      v := TPair(q.DeQueue).V;
 
-    if curIndex = -1 then Break;
+      if visited[v] then Continue;
 
-    visited[curIndex] := true;
-    for w := 1 to N do
-      if (not visited[w]) then
+      for w := 1 to N do
       begin
-        if (dist[curIndex] + map[curIndex, w] < dist[w]) then
+        if (not visited[w]) and (map[v, w] < MaxInt) then
         begin
-          dist[w] := dist[curIndex] + map[curIndex, w];
-          path[w] := curIndex;
-        end;
-      end;
-  end;
-end;
+          dis := dist[v] + map[v, w];
 
-procedure Dijkstra_For(s: integer);
-var
-  v, w, curDist, curIndex, i: integer;
-begin
-  for i := 1 to N do
-  begin
-    dist[i] := map[s, i];
-
-    if dist[i] = MaxInt then
-      path[i] := -1
-    else
-      path[i] := s;
-  end;
-
-  dist[s] := 0;
-  visited[s] := true;
-
-  for i := 1 to N do
-  begin
-    curDist := MaxInt;
-    curIndex := s;
-
-    for v := 1 to N do
-    begin
-      if (not visited[v]) and (dist[v] < curDist) then
-      begin
-        curDist := dist[v];
-        curIndex := v;
-      end;
-    end;
-
-    if curIndex = s then Break;
-
-    visited[curIndex] := true;
-    for w := 1 to N do
-    begin
-      if (not visited[w]) and (map[curIndex, w] < MaxInt) then
-      begin
-        curDist := dist[curIndex] + map[curIndex, w];
-        if dist[w] > curDist then
-        begin
-          dist[w] := curDist;
-          path[w] := curIndex;
+          if dist[w] > dis then
+          begin
+            dist[w] := dis;
+            path[w] := v;
+            q.EnQueue(TPair.Create(w, dis));
+          end;
         end;
       end;
     end;
+  finally
+    q.Free;
   end;
 end;
 
@@ -238,16 +193,8 @@ begin
   s := 5;
 
   Init;
-  WriteLn('Dijkstra_While:');
-  Dijkstra_While(s);
-  PrintArr(dist);
-  PrintArr(path);
-  FindPath(s);
-  DrawLineBlockEnd;
-
-  Init;
-  WriteLn('Dijkstra_For:');
-  Dijkstra_For(s);
+  WriteLn('Dijkstra_PQ:');
+  Dijkstra_PQ(s);
   PrintArr(dist);
   PrintArr(path);
   FindPath(s);

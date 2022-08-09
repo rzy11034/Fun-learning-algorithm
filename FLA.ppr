@@ -17,14 +17,21 @@ uses
   FLA.Algorithm_02_01,
   FLA.Algorithm_02_02,
   FLA.Algorithm_02_03,
-  FLA.Algorithm_02_04;
+  FLA.Algorithm_02_04,
+  FLA.Algorithm_02_05,
+  FLA.Algorithm_02_06,
+  FLA.Algorithm_02_07,
+  FLA.Algorithm_03_01,
+  FLA.Algorithm_03_02,
+  FLA.Algorithm_03_03,
+  FLA.Algorithm_03_04;
 
 begin
   try
     Run;
     DrawLineProgramEnd;
     Writeln(END_OF_PROGRAM_EN);
-    Readln;
+    Readln();
   except
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);
