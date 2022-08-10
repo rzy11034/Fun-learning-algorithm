@@ -25,7 +25,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03"/>
+            <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -133,6 +133,10 @@
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -143,7 +147,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03"/>
+      <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
