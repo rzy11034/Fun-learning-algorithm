@@ -11,6 +11,25 @@ uses
   DeepStar.UString,
   DeepStar.Utils;
 
+type
+  TMultiply_Own = class(TObject)
+  private
+    _Num1: TArrayList_int;
+    _Num2: TArrayList_int;
+    _Sum: TArrayList_int;
+
+    procedure __InitList(s: string; list: TArrayList_int);
+    function __ListToNum(list: TArrayList_int): string;
+    procedure __ADD(num, pow, p: integer);
+    procedure __Mul(num1, num2: TArrayList_int);
+
+  public
+    constructor Create();
+    destructor Destroy; override;
+
+    function Multiply(num1, num2: string): string;
+  end;
+
 procedure Main;
 
 implementation
@@ -70,23 +89,6 @@ type
     function Multiply(num1, num2: string): string;
   end;
 
-  TMultiply_Own = class(TObject)
-  private
-    _Num1: TArrayList_int;
-    _Num2: TArrayList_int;
-    _Sum: TArrayList_int;
-
-    procedure __InitList(s: string; list: TArrayList_int);
-    function __ListToNum(list: TArrayList_int): string;
-    procedure __ADD(num, pow: integer);
-    procedure __Mul(num1, num2: TArrayList_int);
-
-  public
-    constructor Create();
-    destructor Destroy; override;
-
-    function Multiply(num1, num2: string): string;
-  end;
 
 procedure Main;
 var
@@ -110,7 +112,8 @@ begin
 
   with TMultiply_Own.Create do
   begin
-    WriteLn(Multiply('11', '11'));
+    WriteLn(Multiply('999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999',
+    '9999'));
     Free;
   end;
 end;
@@ -148,22 +151,24 @@ begin
   Result := __ListToNum(_Sum);
 end;
 
-procedure TMultiply_Own.__ADD(num,  pow: integer);
+procedure TMultiply_Own.__ADD(num, pow, p: integer);
 var
-  i, j, a, b: integer;
+  i, j, k, a, b: integer;
   temp: TArrayList_int;
   sd, td: integer; // sd: 个位; td:十位
 begin
   temp := TArrayList_int.Create;
   try
     __InitList(IntToStr(num), temp);
+    for i := 0 to pow + p - 1 do
+      temp.AddFirst(0);
 
     i := 0;
-    j := pow;
+    j := 0;
 
     while i < temp.Count do
     begin
-      a := temp[0];
+      a := temp[i];
       if j < _Sum.Count then
         b := _Sum[j]
       else
@@ -171,19 +176,34 @@ begin
 
       if j < _Sum.Count then
       begin
-        sd := (a + b + _Sum[j]) mod 10;
-        td := (a + b + _Sum[j]) div 10;
+        sd := (a + b) mod 10;
+        td := (a + b) div 10;
         _Sum[j] := sd;
       end
       else
       begin
         sd := (a + b) mod 10;
         td := (a + b) div 10;
-        _sum.AddLast(sd);
+        _Sum.AddLast(sd);
       end;
 
-      if td > 0 then
-        _Sum.AddLast(td);
+      k := j + 1;
+      while td > 0 do
+      begin
+        if k < _Sum.Count then
+        begin
+          td := _Sum[k] + td;
+          _Sum[k] := td mod 10;
+          td := td div 10;
+        end
+        else
+        begin
+          _Sum.AddLast(td);
+          td := 0;
+        end;
+
+        k += 1;
+      end;
 
       i += 1;
       j += 1;
@@ -246,7 +266,7 @@ begin
       b := largerNum[j];
       c := a * b;
 
-      __ADD(c, i);
+      __ADD(c, i, j);
     end;
   end;
 end;

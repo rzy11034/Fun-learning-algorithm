@@ -12,7 +12,7 @@
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="15"/>
-        <CursorPos Y="31"/>
+        <CursorPos Y="33"/>
         <UsageCount Value="225"/>
         <Loaded Value="True"/>
       </Unit>
@@ -21,8 +21,8 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="30"/>
-        <CursorPos X="23" Y="47"/>
+        <TopLine Value="10"/>
+        <CursorPos X="17" Y="24"/>
         <UsageCount Value="225"/>
         <Loaded Value="True"/>
       </Unit>
@@ -118,7 +118,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos X="31" Y="5"/>
-        <UsageCount Value="199"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_01.pas"/>
@@ -127,7 +127,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="16"/>
         <CursorPos X="12" Y="43"/>
-        <UsageCount Value="139"/>
+        <UsageCount Value="152"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_02.pas"/>
@@ -136,7 +136,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="48"/>
         <CursorPos X="14" Y="70"/>
-        <UsageCount Value="137"/>
+        <UsageCount Value="150"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_03.pas"/>
@@ -146,32 +146,32 @@
         <TopLine Value="120"/>
         <CursorPos Y="140"/>
         <FoldState Value=" T3T07&apos;"/>
-        <UsageCount Value="134"/>
+        <UsageCount Value="147"/>
       </Unit>
       <Unit>
         <Filename Value="README.md"/>
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
-        <CursorPos X="33" Y="21"/>
+        <CursorPos X="37" Y="10"/>
         <SyntaxHighlighter Value="PO"/>
-        <UsageCount Value="132"/>
+        <UsageCount Value="145"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="149"/>
-        <CursorPos X="38" Y="159"/>
-        <UsageCount Value="122"/>
+        <TopLine Value="179"/>
+        <CursorPos X="19" Y="202"/>
+        <UsageCount Value="135"/>
         <Bookmarks Count="2">
-          <Item0 Y="151"/>
-          <Item1 X="11" Y="226" ID="1"/>
+          <Item0 Y="93" ID="1"/>
+          <Item1 Y="154" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
       </Unit>
@@ -181,7 +181,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos X="3" Y="278"/>
-        <UsageCount Value="101"/>
+        <UsageCount Value="100"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Linear\DeepStar.DSA.Linear.ArrayList.pas"/>
@@ -190,7 +190,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="205"/>
         <CursorPos Y="214"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\typhon\components\packages_pl\pl_OpenCV\source\libopencv2.pas"/>
@@ -200,7 +200,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="37"/>
         <CursorPos X="51" Y="40"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="25"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\Utils\DeepStar.UString.pas"/>
@@ -208,7 +208,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="16"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\objpas.pp"/>
@@ -217,7 +217,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="18"/>
         <CursorPos X="8" Y="35"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\math.pp"/>
@@ -227,25 +227,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1140"/>
         <CursorPos X="10" Y="1157"/>
-        <UsageCount Value="5"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\DeepStar.DSA.Interfaces.pas"/>
-        <FRMtype Value="0"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="4"/>
-        <UsageCount Value="1"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.defaults.pas"/>
-        <FRMtype Value="0"/>
-        <UnitName Value="Generics.Defaults"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="2630"/>
-        <CursorPos X="33" Y="2650"/>
-        <UsageCount Value="1"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\classes\classesh.inc"/>
@@ -254,7 +236,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="417"/>
         <CursorPos X="3" Y="434"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\..\..\usr\local\codetyphon\fpcsrc\rtl\objpas\objpas.pp"/>
@@ -263,7 +245,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="66"/>
         <CursorPos X="23" Y="35"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\D\Users\Administrator\Documents\Project\Git\DeepStar-Lib\Typhon\Package\Source\Utils\DeepStar.UString.pas"/>
@@ -271,7 +253,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="34"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\D\Users\Administrator\Documents\Project\Git\DeepStar-Lib\Typhon\Package\Source\DSA\Tree\DeepStar.DSA.Tree.Heap.pas"/>
@@ -279,7 +261,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos X="5" Y="19"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\D\Users\Administrator\Documents\Project\Git\DeepStar-Lib\Typhon\Package\Source\DSA\Linear\DeepStar.DSA.Linear.ArrayList.pas"/>
@@ -288,14 +270,14 @@
         <WindowIndex Value="0"/>
         <TopLine Value="203"/>
         <CursorPos Y="212"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gqueue.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gmap.pp"/>
@@ -304,7 +286,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="95"/>
         <CursorPos X="96" Y="95"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\D\Users\Administrator\Documents\Project\Git\DeepStar-Lib\Typhon\Package\Source\Utils\DeepStar.Utils.pas"/>
@@ -313,7 +295,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="260"/>
         <CursorPos X="25" Y="271"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\D\Users\Administrator\Documents\Project\Git\DeepStar-Lib\Typhon\Package\Source\DSA\DeepStar.DSA.Interfaces.pas"/>
@@ -321,7 +303,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos X="11" Y="14"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\..\..\usr\local\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
@@ -330,7 +312,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="766"/>
         <CursorPos X="15" Y="782"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
@@ -340,62 +322,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1021"/>
         <CursorPos X="3" Y="1013"/>
-        <UsageCount Value="3"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\packages\fv\src\asciitab.pas"/>
-        <FRMtype Value="0"/>
-        <UnitName Value="AsciiTab"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="235"/>
-        <UsageCount Value="1"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.helpers.pas"/>
-        <FRMtype Value="0"/>
-        <UnitName Value="Generics.Helpers"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="127"/>
-        <CursorPos X="48" Y="17"/>
-        <UsageCount Value="1"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
-        <FRMtype Value="0"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1100"/>
-        <CursorPos X="14" Y="1117"/>
-        <UsageCount Value="1"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelpb.inc"/>
-        <FRMtype Value="0"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="25"/>
-        <CursorPos X="54" Y="40"/>
-        <UsageCount Value="1"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\sysstrh.inc"/>
-        <FRMtype Value="0"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="223"/>
-        <CursorPos X="10" Y="240"/>
-        <UsageCount Value="1"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\sysstr.inc"/>
-        <FRMtype Value="0"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="2015"/>
-        <CursorPos X="2" Y="2019"/>
-        <UsageCount Value="1"/>
+        <UsageCount Value="2"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-extra\src\inc\ucomplex.pp"/>
@@ -405,7 +332,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="13"/>
         <CursorPos X="17" Y="25"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Linear\DeepStar.DSA.Linear.LinkedList.pas"/>
@@ -414,7 +341,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="399"/>
         <CursorPos X="35" Y="131"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Linear\DeepStar.DSA.Linear.DoubleLinkedList.pas"/>
@@ -422,7 +349,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="463"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Tree\DeepStar.DSA.Tree.AVLTree.pas"/>
@@ -430,7 +357,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="7"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Tree\DeepStar.DSA.Tree.BalanceBinarySearchTree.pas"/>
@@ -439,7 +366,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="4"/>
         <CursorPos X="11" Y="13"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Tree\DeepStar.DSA.Tree.BinarySearchTree.pas"/>
@@ -448,7 +375,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="30"/>
         <CursorPos X="3" Y="50"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\DSA\Tree\DeepStar.DSA.Tree.BinaryTree.pas"/>
@@ -457,129 +384,129 @@
         <WindowIndex Value="0"/>
         <TopLine Value="59"/>
         <CursorPos X="60" Y="76"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="170" TopLine="160"/>
+        <Caret Line="189" TopLine="179"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="172" TopLine="160"/>
+        <Caret Line="190" TopLine="179"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="180" TopLine="171"/>
+        <Caret Line="207" TopLine="197"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="181" TopLine="171"/>
+        <Caret Line="208" TopLine="197"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="182" TopLine="171"/>
+        <Caret Line="168" TopLine="158"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="185" TopLine="171"/>
+        <Caret Line="170" TopLine="158"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="157" TopLine="147"/>
+        <Caret Line="171" TopLine="158"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="158" TopLine="147"/>
+        <Caret Line="172" TopLine="158"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="159" TopLine="147"/>
+        <Caret Line="176" TopLine="159"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="161" TopLine="147"/>
+        <Caret Line="178" TopLine="161"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="162" TopLine="147"/>
+        <Caret Line="179" TopLine="162"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="164" TopLine="151"/>
+        <Caret Line="180" TopLine="163"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="166" TopLine="151"/>
+        <Caret Line="189" TopLine="179"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="167" TopLine="151"/>
+        <Caret Line="190" TopLine="179"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="168" TopLine="153"/>
+        <Caret Line="192" TopLine="179"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="172" TopLine="163"/>
+        <Caret Line="200" TopLine="190"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="174" TopLine="163"/>
+        <Caret Line="201" TopLine="190"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="175" TopLine="163"/>
+        <Caret Line="204" TopLine="190"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="176" TopLine="163"/>
+        <Caret Line="165" TopLine="155"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="185" TopLine="176"/>
+        <Caret Line="166" TopLine="155"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="188" TopLine="176"/>
+        <Caret Line="168" TopLine="155"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="189" TopLine="176"/>
+        <Caret Line="170" TopLine="155"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="149" Column="51" TopLine="142"/>
+        <Caret Line="171" TopLine="155"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\FLA.Main.pas"/>
+        <Caret Line="35" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\FLA.Main.pas"/>
+        <Caret Line="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\FLA.Main.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\FLA.Main.pas"/>
+        <Caret Line="35" TopLine="19"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="151" TopLine="150"/>
+        <Caret Line="165" TopLine="155"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="226" Column="11" TopLine="215"/>
+        <Caret Line="108" Column="37" TopLine="89"/>
       </Position>
       <Position>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="151" TopLine="134"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="225" TopLine="221"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="226" Column="11" TopLine="219"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="151" TopLine="134"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Caret Line="249" Column="17" TopLine="221"/>
+        <Caret Line="115" Column="31" TopLine="96"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -588,15 +515,6 @@
     </RunParams>
   </ProjectSession>
   <Debugging>
-    <BreakPoints>
-      <Item>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
-        <Line Value="151"/>
-      </Item>
-    </BreakPoints>
     <Watches>
       <Item ClassAutoCast="True">
         <Expression Value="_Nums1"/>
@@ -618,6 +536,9 @@
       </Item>
       <Item ClassAutoCast="True">
         <Expression Value="_Sum"/>
+      </Item>
+      <Item ClassAutoCast="True">
+        <Expression Value="temp"/>
       </Item>
     </Watches>
   </Debugging>
