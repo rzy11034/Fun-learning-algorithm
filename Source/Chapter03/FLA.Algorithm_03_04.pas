@@ -93,7 +93,6 @@ type
 procedure Main;
 var
   s: string;
-  i: Integer;
 begin
   s := int64.MaxValue.ToString + int64.MaxValue.ToString;
 

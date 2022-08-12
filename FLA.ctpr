@@ -137,6 +137,14 @@
         <Filename Value="Source\Chapter04\FLA.Algorithm_04_01.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
