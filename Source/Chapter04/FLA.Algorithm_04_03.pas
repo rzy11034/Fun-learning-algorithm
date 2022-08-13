@@ -95,7 +95,7 @@ begin
       j := i + d - 1;
       for k := i + 1 to j - 1 do
       begin
-        temp := m[i, j] + m[k, j];
+        temp := m[i, k] + m[k, j];
         if temp < m[i, j] then
         begin
           m[i, j] := temp;

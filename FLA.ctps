@@ -127,7 +127,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="16"/>
         <CursorPos X="12" Y="43"/>
-        <UsageCount Value="170"/>
+        <UsageCount Value="175"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_02.pas"/>
@@ -136,7 +136,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="48"/>
         <CursorPos X="14" Y="70"/>
-        <UsageCount Value="168"/>
+        <UsageCount Value="173"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_03.pas"/>
@@ -146,17 +146,18 @@
         <TopLine Value="120"/>
         <CursorPos Y="140"/>
         <FoldState Value=" T3T07&apos;"/>
-        <UsageCount Value="165"/>
+        <UsageCount Value="170"/>
       </Unit>
       <Unit>
         <Filename Value="README.md"/>
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
-        <CursorPos X="18" Y="25"/>
+        <CursorPos X="44" Y="26"/>
         <SyntaxHighlighter Value="FreePascal"/>
-        <UsageCount Value="163"/>
+        <UsageCount Value="168"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit>
@@ -167,7 +168,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="76"/>
         <CursorPos Y="96"/>
-        <UsageCount Value="153"/>
+        <UsageCount Value="158"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter04\FLA.Algorithm_04_01.pas"/>
@@ -176,7 +177,27 @@
         <WindowIndex Value="0"/>
         <TopLine Value="13"/>
         <CursorPos X="9" Y="38"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="40"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="7"/>
+        <CursorPos X="13" Y="39"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="73"/>
+        <CursorPos X="37" Y="32"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="..\DeepStar-Lib\Typhon\Package\Source\Utils\DeepStar.Utils.pas"/>
@@ -306,7 +327,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos X="11" Y="14"/>
-        <UsageCount Value="0"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\..\..\..\usr\local\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
@@ -397,69 +418,8 @@
         <CursorPos X="23" Y="19"/>
         <UsageCount Value="10"/>
       </Unit>
-      <Unit>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="7"/>
-        <CursorPos X="13" Y="39"/>
-        <UsageCount Value="25"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
-        <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="27"/>
-        <CursorPos Y="39"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="24" Column="45"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="37" Column="8" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="38" Column="7" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="45" Column="10" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\FLA.Main.pas"/>
-        <Caret Line="25" Column="7" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="35" Column="20" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="36" Column="39" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="59" Column="9" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="34" TopLine="20"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
-        <Caret Line="35" TopLine="20"/>
-      </Position>
       <Position>
         <Filename Value="Source\Chapter04\FLA.Algorithm_04_02.pas"/>
         <Caret Line="36" TopLine="20"/>
@@ -540,6 +500,46 @@
         <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
         <Caret Line="64" Column="9" TopLine="44"/>
       </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="77" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="39" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="40" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="41" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="42" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="77" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="39" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="40" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="41" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
+        <Caret Line="42" TopLine="29"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -547,15 +547,6 @@
     </RunParams>
   </ProjectSession>
   <Debugging>
-    <BreakPoints>
-      <Item>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="Source\Chapter04\FLA.Algorithm_04_03.pas"/>
-        <Line Value="39"/>
-      </Item>
-    </BreakPoints>
     <Watches>
       <Item ClassAutoCast="True">
         <Expression Value="self"/>
