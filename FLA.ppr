@@ -6,25 +6,10 @@ uses
  {$IFDEF UNIX}
   cthreads,
  {$ENDIF}
-  Classes,
-  SysUtils,
-  DeepStar.Utils,
-  FLA.Main,
-  FLA.Algorithm_01_11,
-  FLA.Algorithm_01_12,
-  FLA.Algorithm_01_13,
-  FLA.Algorithm_01_14,
-  FLA.Algorithm_02_01,
-  FLA.Algorithm_02_02,
-  FLA.Algorithm_02_03,
-  FLA.Algorithm_02_04,
-  FLA.Algorithm_02_05,
-  FLA.Algorithm_02_06,
-  FLA.Algorithm_02_07,
-  FLA.Algorithm_03_01,
-  FLA.Algorithm_03_02,
-  FLA.Algorithm_03_03,
-  FLA.Algorithm_03_04, FLA.Algorithm_04_01, FLA.Algorithm_04_02, FLA.Algorithm_04_03, FLA.Algorithm_04_04, FLA.Algorithm_04_05, FLA.Algorithm_04_06;
+  Classes, SysUtils, DeepStar.Utils, FLA.Main, FLA.Algorithm_01_11, FLA.Algorithm_01_12, FLA.Algorithm_01_13, FLA.Algorithm_01_14,
+  FLA.Algorithm_02_01, FLA.Algorithm_02_02, FLA.Algorithm_02_03, FLA.Algorithm_02_04, FLA.Algorithm_02_05, FLA.Algorithm_02_06, FLA.Algorithm_02_07,
+  FLA.Algorithm_03_01, FLA.Algorithm_03_02, FLA.Algorithm_03_03, FLA.Algorithm_03_04, FLA.Algorithm_04_01, FLA.Algorithm_04_02, FLA.Algorithm_04_03,
+  FLA.Algorithm_04_04, FLA.Algorithm_04_05, FLA.Algorithm_04_06, FLA.Algorithm_04_06_01, FLA.Algorithm_04_07;
 
 begin
   try

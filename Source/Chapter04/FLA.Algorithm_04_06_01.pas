@@ -1,4 +1,4 @@
-﻿unit FLA.Algorithm_04_06;
+﻿unit FLA.Algorithm_04_06_01;
 
 {$mode DelphiUnicode}
 
@@ -7,7 +7,6 @@ interface
 uses
   Classes,
   SysUtils,
-  Math,
   DeepStar.Utils;
 
 procedure Main;
@@ -25,12 +24,14 @@ type
     TArr2D = array[0..M, 0..M] of integer;
 
   public
-    mins, maxs: TArr2D;
+    mins, maxs, s: TArr2D;
     sum, a: TArr;
     min_Circular, max_Circular: integer;
 
     procedure Straight(a: TArr; n: integer);
     procedure Circular(a: TArr; n: integer);
+    procedure Get_Min(n: integer);
+    procedure Get_Max(n: integer);
   end;
 
 procedure Main;
@@ -67,7 +68,6 @@ var
 begin
   for i := 1 to n - 1 do
     a[n + i] := a[i];
-
   n := 2 * n - 1;
   Straight(a, n);
   n := (n + 1) div 2;
@@ -82,34 +82,67 @@ begin
   end;
 end;
 
-procedure TSolution.Straight(a: TArr; n: integer);
+procedure TSolution.Get_Max(n: integer);
 var
-  i, v, j, temp, k: integer;
+  v, i, j, temp: integer;
 begin
-  for i := 1 to n do // 初始化
-  begin
-    mins[i, i] := 0;
-    maxs[i, i] := 0;
-  end;
-  sum[0] := 0;
-  for i := 1 to n do
-    sum[i] := sum[i - 1] + a[i];
-
   for v := 2 to n do
   begin
     for i := 1 to n - v + 1 do
     begin
       j := i + v - 1;
-      mins[i, j] := INF;
       maxs[i, j] := -1;
       temp := sum[j] - sum[i - 1];
-      for k := i to j - 1 do
-      begin
-        mins[i, j] := min(mins[i, j], mins[i, k] + mins[k + 1, j] + temp);
-        maxs[i, j] := max(maxs[i, j], maxs[i, k] + maxs[k + 1, j] + temp);
-      end;
+      if maxs[i + 1, j] > maxs[i, j - 1] then
+        maxs[i, j] := maxs[i + 1, j] + temp
+      else
+        maxs[i, j] := maxs[i, j - 1] + temp;
     end;
   end;
+end;
+
+procedure TSolution.Get_Min(n: integer);
+var
+  v, i, j, temp, i1, j1, k: integer;
+begin
+  for v := 2 to n do
+  begin
+    for i := 1 to n - v + 1 do
+    begin
+      j := i + v - 1;
+      temp := sum[j] - sum[i - 1];
+      if s[i, j - 1] > i then i1 := s[i, j - 1] else i1 := i;
+      if s[i + 1, j] < j then j1 := s[i + 1, j] else j1 := j;
+      mins[i, j] := mins[i, i1] + mins[i1 + 1, j];
+      s[i, j] := i1;
+      for k := i1 + 1 to j1 do
+      begin
+        if mins[i, k] + mins[k + 1, j] < mins[i, j] then
+        begin
+          mins[i, j] := mins[i, k] + mins[k + 1, j];
+          s[i, j] := k;
+        end;
+      end;
+      mins[i, j] += temp;
+    end;
+  end;
+end;
+
+procedure TSolution.Straight(a: TArr; n: integer);
+var
+  i: integer;
+begin
+  for i := 1 to n do
+  begin
+    mins[i, i] := 0;
+    maxs[i, i] := 0;
+    s[i, i] := 0;
+  end;
+  sum[0] := 0;
+  for i := 1 to n do
+    sum[i] := sum[i - 1] + a[i];
+  Get_Min(n);
+  Get_Max(n);
 end;
 
 end.
