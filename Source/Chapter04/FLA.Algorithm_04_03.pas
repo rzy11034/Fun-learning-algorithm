@@ -55,7 +55,6 @@ begin
   Self.n := n;
 
   len := n + 1;
-  //r, m, s: TArr2D_int;
   SetLength(r, len, len);
   SetLength(m, len, len);
   SetLength(s, len, len);

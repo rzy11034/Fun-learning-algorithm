@@ -24,7 +24,7 @@ uses
   FLA.Algorithm_03_01,
   FLA.Algorithm_03_02,
   FLA.Algorithm_03_03,
-  FLA.Algorithm_03_04, FLA.Algorithm_04_01, FLA.Algorithm_04_02, FLA.Algorithm_04_03;
+  FLA.Algorithm_03_04, FLA.Algorithm_04_01, FLA.Algorithm_04_02, FLA.Algorithm_04_03, FLA.Algorithm_04_04, FLA.Algorithm_04_05, FLA.Algorithm_04_06;
 
 begin
   try
