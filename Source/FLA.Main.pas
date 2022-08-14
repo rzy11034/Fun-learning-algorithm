@@ -1,18 +1,17 @@
 ﻿unit FLA.Main;
 
 {$mode delphiunicode}
-{$WARN 5023 off : Unit "$1" not used in $2}
 
 interface
 
 uses
   Classes,
   SysUtils,
-  Math,
-  DeepStar.DSA.Interfaces,
-  DeepStar.Math,
-  DeepStar.Utils,
-  DeepStar.UString;
+  {%H-}Math,
+  {%H-}DeepStar.DSA.Interfaces,
+  {%H-}DeepStar.Math,
+  {%H-}DeepStar.Utils,
+  {%H-}DeepStar.UString;
 
 procedure Run;
 
