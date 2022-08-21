@@ -32,7 +32,7 @@ uses
   FLA.Algorithm_04_05,
   FLA.Algorithm_04_06,
   FLA.Algorithm_04_06_01,
-  FLA.Algorithm_04_07, FLA.Algorithm_04_07_01;
+  FLA.Algorithm_04_07, FLA.Algorithm_04_07_01, FLA.Algorithm_04_08;
 
 begin
   try

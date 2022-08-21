@@ -1,6 +1,6 @@
-unit FLA.Algorithm_04_07_01;
+﻿unit FLA.Algorithm_04_07_01;
 
-{$mode DelphiUnicode}
+{$mode delphiunicode}
 
 interface
 
@@ -27,6 +27,8 @@ type
 
     constructor Create(n, weight: integer; const newWeight, newV: TArr_int);
     procedure opt1;
+    procedure opt2;
+    procedure opt3;
   end;
 
 procedure Main;
@@ -47,8 +49,11 @@ begin
   TS := TSolution.Create(n, weight, w, v);
   try
     WriteLnF('装入购物车的最大价值为：%d', [TS.Result]);
-    Write('装入购物车的物品为：');
 
+    for i := 1 to weight do
+    begin
+      Write(TS.dp[i], ' ');
+    end;
 
     WriteLn
   finally
@@ -60,7 +65,7 @@ end;
 
 constructor TSolution.Create(n, weight: integer; const newWeight, newV: TArr_int);
 var
-  i, j: integer;
+  i: integer;
 begin
   Self.n := n;
   Self.weight := weight;
@@ -71,7 +76,9 @@ begin
     Self.v[i + 1] := newV[i];
   end;
 
-  opt1;
+  //opt1;
+  //opt2;
+  opt3;
 
   Self.Result := dp[weight];
 end;
@@ -82,11 +89,36 @@ var
 begin
   for i := 1 to n do
   begin
-    for j := weight downto 1 do
+    for j := weight downto 0 do
     begin
-      if j >= weight then
+      if j >= w[i] then
         dp[j] := max(dp[j], dp[j - w[i]] + v[i]);
     end;
+  end;
+end;
+
+procedure TSolution.opt2;
+var
+  i, j: integer;
+begin
+  for i := 1 to n do
+    for j := weight downto w[i] do
+      dp[j] := max(dp[j], dp[j - w[i]] + v[i]);
+end;
+
+procedure TSolution.opt3;
+var
+  sum: TArr;
+  bound, i, j: integer;
+begin
+  sum[0] := 0;
+  for i := 1 to n do
+    sum[i] := sum[i - 1] + w[i];
+  for i := 1 to n do
+  begin
+    bound := max(w[i], weight - (sum[n] - sum[i - 1]));
+    for j := weight downto bound do
+      dp[j] := max(dp[j], dp[j - w[i]] + v[i]);
   end;
 end;
 
