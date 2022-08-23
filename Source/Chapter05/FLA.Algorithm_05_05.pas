@@ -74,6 +74,7 @@ begin
   begin
     nodes[i].x := a[i - 1];
     nodes[i].y := b[i - 1];
+    x[i] := i;
   end;
 
   bestf := INF;
@@ -85,7 +86,8 @@ begin
   for i := 1 to n do
     Write(bestx[i], ' ');
   WriteLn;
-  WriteLn('最优的机器零件加工的时间为：');
+  Write('最优的机器零件加工的时间为：');
+  WriteLn(bestf);
 end;
 
 end.
