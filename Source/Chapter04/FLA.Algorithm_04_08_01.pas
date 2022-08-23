@@ -1,4 +1,4 @@
-﻿unit FLA.Algorithm_04_08;
+﻿unit FLA.Algorithm_04_08_01;
 
 {$mode DelphiUnicode}
 
@@ -89,7 +89,7 @@ end;
 
 procedure TSolution.Optimal_BST;
 var
-  i, t, j, k: integer;
+  i, t, j, k, i1, j1: integer;
   temp: double;
 begin
   for i := 1 to n + 1 do
@@ -104,10 +104,13 @@ begin
     begin
       j := i + t - 1;
       w[i, j] := w[i, j - 1] + p[j] + q[j];
-      c[i, j] := c[i, i - 1] + c[i + 1, j];
-      s[i, j] := i;
+      if s[i, j - 1] > i then i1 := s[i, j - 1] else i1 := i;
+      if s[i + 1, j] < j then j1 := s[i + 1, j] else j1 := j;
 
-      for k := i + 1 to j do
+      c[i, j] := c[i, i1 - 1] + c[i1 + 1, j];
+      s[i, j] := i1;
+
+      for k := i1 + 1 to j1 do
       begin
         temp := c[i, k - 1] + c[k + 1, j];
         if (temp < c[i, j]) and (Abs(temp - c[i, j]) > 1E-6) then

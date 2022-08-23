@@ -25,7 +25,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04"/>
+            <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04;Source\Chapter05"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -178,6 +178,34 @@
         <Filename Value="Source\Chapter04\FLA.Algorithm_04_08.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter04\FLA.Algorithm_04_08_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter05\FLA.Algorithm_05_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter05\FLA.Algorithm_05_01_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter05\FLA.Algorithm_05_02.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter05\FLA.Algorithm_05_03.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter05\FLA.Algorithm_05_04.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter05\FLA.Algorithm_05_05.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -188,7 +216,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04"/>
+      <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04;Source\Chapter05"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
