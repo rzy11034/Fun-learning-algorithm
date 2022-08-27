@@ -33,7 +33,8 @@ uses
   FLA.Algorithm_04_06,
   FLA.Algorithm_04_06_01,
   FLA.Algorithm_04_07, FLA.Algorithm_04_07_01, FLA.Algorithm_04_08, FLA.Algorithm_04_08_01, FLA.Algorithm_05_01, FLA.Algorithm_05_01_01,
-FLA.Algorithm_05_02, FLA.Algorithm_05_03, FLA.Algorithm_05_04, FLA.Algorithm_05_05, FLA.Algorithm_05_05_02;
+FLA.Algorithm_05_02, FLA.Algorithm_05_03, FLA.Algorithm_05_04, FLA.Algorithm_05_05, FLA.Algorithm_05_05_02, FLA.Algorithm_05_06,
+FLA.Algorithm_05_06_01, FLA.Algorithm_06_01, FLA.Algorithm_06_01_01;
 
 begin
   try

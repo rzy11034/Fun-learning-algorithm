@@ -1,6 +1,7 @@
 ﻿unit FLA.Algorithm_05_05;
 
-{$mode DelphiUnicode}
+{$mode objfpc}{$H+}
+{$ModeSwitch unicodestrings}
 
 interface
 
@@ -51,9 +52,9 @@ begin
     f2 := max(f2, f1) + nodes[x[i]].y;
     if f2 < bestf then
     begin
-      Swap<integer>(x[t], x[i]);
+      specialize Swap<integer>(x[t], x[i]);
       Backtrack(t + 1);
-      Swap<integer>(x[t], x[i]);
+      specialize Swap<integer>(x[t], x[i]);
     end;
 
     f1 -= nodes[x[i]].x;

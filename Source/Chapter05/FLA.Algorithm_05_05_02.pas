@@ -1,6 +1,7 @@
 ﻿unit FLA.Algorithm_05_05_02;
 
-{$mode DelphiUnicode}
+{$mode objfpc}{$H+}
+{$ModeSwitch unicodestrings}
 
 interface
 
@@ -13,9 +14,6 @@ uses
 procedure Main;
 
 implementation
-
-const
-  MX = 10000 + 5;
 
 type
   TNode = record
@@ -63,7 +61,7 @@ begin
     nodes[i].id := i + 1;
   end;
 
-  TArrayUtils<TNode>.Sort(nodes, @cmp);
+  specialize TArrayUtils<TNode>.Sort(nodes, @cmp);
 
   f1 := 0;
   f2 := 0;

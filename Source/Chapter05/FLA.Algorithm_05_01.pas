@@ -1,6 +1,7 @@
 ﻿unit FLA.Algorithm_05_01;
 
-{$mode DelphiUnicode}
+{$mode objfpc}{$H+}
+{$ModeSwitch unicodestrings}
 
 interface
 

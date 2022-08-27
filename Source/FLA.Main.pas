@@ -1,6 +1,7 @@
 ﻿unit FLA.Main;
 
-{$mode delphiunicode}
+{$mode objfpc}{$H+}
+{$ModeSwitch unicodestrings}
 
 interface
 
@@ -18,7 +19,7 @@ procedure Run;
 implementation
 
 uses
-  FLA.Algorithm_05_05_02;
+  FLA.Algorithm_06_01;
 
 procedure Test;
 begin
