@@ -28,21 +28,22 @@ type
     class function cmp(constref a, b: TNode): integer; static;
   end;
 
-  TGoods = record
-    Value, weight: integer;
-  end;
-
   TObj = record
     id: integer;
     d: double;
     class function cmp(constref a, b: TObj): integer; static;
   end;
 
-  TArr_TGoods = array of TGoods;
+  TGoods = record
+    weight, Value: integer;
+  end;
+
   TArr_TObj = array of TObj;
+  TArr_TGoods = array of TGoods;
   TPQ_TNode = specialize TPriorityQueue<TNode>;
 
 var
+  goods: TArr_TGoods;
   bestx: TArr_bool;
   ws, vs: TArr_Int;
   S: TArr_TObj;
@@ -50,6 +51,7 @@ var
 
 procedure Init;
 begin
+  SetLength(goods, _N_);
   SetLength(bestx, _N_);
   SetLength(ws, _N_);
   SetLength(vs, _N_);
@@ -152,7 +154,60 @@ begin
 end;
 
 procedure Main;
+var
+  a: TArr_int;
+  q: IQueue_int;
+  i: integer;
 begin
+  Init;
+  n := 4;
+  w := 10;
+  sumw := 0;
+  sumv := 0;
+
+  a := [2, 6, 5, 3, 4, 5, 2, 4];
+  q := TQueue_int.Create;
+  for i := 0 to High(a) do
+    q.EnQueue(a[i]);
+
+  for i := 1 to n do
+  begin
+    goods[i].weight := q.DeQueue;
+    goods[i].Value := q.DeQueue;
+    sumw += goods[i].weight;
+    sumv += goods[i].Value;
+    S[i - 1].id := i;
+    S[i - 1].d := 1.0 * goods[i].Value / goods[i].weight;
+  end;
+
+  if sumw <= W then
+  begin
+    bestp := sumv;
+    WriteLn('放入购物车的物品最大价值为：', bestp);
+    WriteLn('所有的物品均放入购物车：');
+    Exit;
+  end;
+
+  specialize
+  TArrayUtils<TObj>.Sort(s, 0, n, @TObj.cmp);
+  WriteLn('排序后的物品重量和价值：');
+  for i := 1 to n do
+  begin
+    ws[i] := goods[S[i - 1].id].weight;
+    vs[i] := goods[S[i - 1].id].Value;
+    WriteLn(ws[i], ' ', vs[i]);
+  end;
+
+  Priorbfs;
+  WriteLn('放入购物车的物品最大价值为：', bestp);
+  WriteLn('所有的物品均放入购物车：');
+  for i := 1 to n do
+  begin
+    if bestx[i] then
+      Write(S[i - 1].id, ' ');
+  end;
+
+  WriteLn;
 end;
 
 { TObj }

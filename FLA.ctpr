@@ -226,6 +226,14 @@
         <Filename Value="Source\Chapter06\FLA.Algorithm_06_01_01.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter06\FLA.Algorithm_06_02.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter06\FLA.Algorithm_06_02_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
