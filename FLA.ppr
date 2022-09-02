@@ -49,7 +49,7 @@ uses
   FLA.Algorithm_06_01_01,
   FLA.Algorithm_06_02,
   FLA.Algorithm_06_02_01,
-  FLA.Algorithm_06_03;
+  FLA.Algorithm_06_03, FLA.Algorithm_07_01;
 
 begin
   try

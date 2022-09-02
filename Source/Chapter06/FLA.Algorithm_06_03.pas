@@ -30,6 +30,14 @@ type
 var
   grid: TArr2D_int;
 
+function IsvalidPoint(p: TPoint): boolean;
+begin
+  Result := false;
+
+  if (p.X in [Low(grid)..High(grid)]) and (p.Y in [Low(grid[0])..High(grid[0])]) then
+    Result := true;
+end;
+
 function Findpath(s, e: TPoint; var path: TArr_TPoint; var pathLen: integer): boolean;
 var
   here, Next: TPoint;
