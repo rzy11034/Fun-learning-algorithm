@@ -50,7 +50,7 @@ begin
     if i >= 1 then
       Write('x', JL[i]);
     for j := 0 to m do
-      WriteF('%s ', [kernel[i, j].ToString]);
+      WriteF('%8s ', [kernel[i, j].ToString]);
     WriteLn;
   end;
 end;
@@ -149,12 +149,31 @@ begin
 end;
 
 procedure Main;
+var
+  a: TArr2D_dbl;
 begin
   WriteLn('输入非基本变量个数和非基本变量下标：', #13#10 + '3', #13#10 + '245');
   m := 3;
-  FJL := '245'.ToCharArray;
+  FJL := '0245'.ToCharArray;
+
+  WriteLn('输入基本变量个数和基本变量下标：', #13#10 + '4', #13#10 + '1367');
+  n := 4;
+  JL := '01367'.ToCharArray;
+
   Init;
+  WriteLn( '输入约束标准型初始单纯形表参数：');
+  a := [
+    [0, 2.5, 2.8, 76.25],
+    [0, 1, 0, -5],
+    [0, 0, 1, -2],
+    [12000, 0, 0, 1],
+    [1000, 0.1, 0.08, 0.05]];
+  for i := 0 to n do
+    for j := 0 to m do
+      kernel[i, j] := a[i, j];
+
   Print;
+  DCXA
 end;
 
 end.
