@@ -3,7 +3,6 @@
 {$mode objfpc}{$H+}
 {$ModeSwitch unicodestrings}
 
-
 interface
 
 uses
@@ -15,7 +14,6 @@ uses
 procedure Main;
 
 implementation
-
 
 var
   kernel: TArr2D_dbl;
@@ -91,7 +89,10 @@ begin
       if max2 < kernel[i, e] then
         max2 := kernel[i, e];
 
-      temp := kernel[i, 0] / kernel[i, e];
+      if kernel[i, e] <> 0 then
+        temp := kernel[i, 0] / kernel[i, e]
+      else
+        temp := 0;
 
       if (temp > 0) and (temp < min) then
       begin
@@ -161,7 +162,7 @@ begin
   JL := '01367'.ToCharArray;
 
   Init;
-  WriteLn( '输入约束标准型初始单纯形表参数：');
+  WriteLn('输入约束标准型初始单纯形表参数：');
   a := [
     [0, 2.5, 2.8, 76.25],
     [0, 1, 0, -5],
@@ -173,7 +174,7 @@ begin
       kernel[i, j] := a[i, j];
 
   Print;
-  DCXA
+  DCXA;
 end;
 
 end.

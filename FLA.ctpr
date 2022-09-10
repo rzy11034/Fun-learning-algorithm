@@ -28,12 +28,6 @@
             <OtherUnitFiles Value="Source;Source\Chapter01;Source\Chapter02;Source\Chapter03;Source\Chapter04;Source\Chapter05;Source\Chapter06;Source\Chapter07"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
-          <Parsing>
-            <SyntaxOptions>
-              <SyntaxMode Value="DelphiUnicode"/>
-              <UseAnsiStrings Value="False"/>
-            </SyntaxOptions>
-          </Parsing>
           <CodeGeneration>
             <SmartLinkUnit Value="True"/>
           </CodeGeneration>
@@ -240,6 +234,14 @@
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_02.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_02_01.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
