@@ -141,6 +141,7 @@ begin
         end;
         Break;
       end;
+      i := es[i].Next;
     end;
 
     if i = -1 then
@@ -243,7 +244,8 @@ begin
 
   WriteLn;
   PrintGs(n);
-  WriteLn('网络的最大流值：', Isap(1, n, n));
+  i := Isap(1, n, n);
+  WriteLn('网络的最大流值：', i);
   WriteLn;
   PrintGs(n);
   PrintFlow(n);
