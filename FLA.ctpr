@@ -124,11 +124,6 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="README.md"/>
-        <FRMtype Value="0"/>
-        <IsPartOfProject Value="True"/>
-      </Unit>
-      <Unit>
         <Filename Value="Source\Chapter03\FLA.Algorithm_03_04.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
@@ -246,6 +241,26 @@
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_03.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_04.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_04_01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_05.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_06.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_07.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>

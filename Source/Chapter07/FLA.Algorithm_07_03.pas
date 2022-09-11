@@ -49,7 +49,6 @@ begin
   begin
     vs[i].First := -1;
     pre[i] := -1;
-    dist[i] := INF;
   end;
 
   top := 0;
@@ -79,6 +78,8 @@ var
   q: IQueue_int;
 begin
   q := TQueue_int.Create;
+  for i := 1 to n do
+    dist[i] := INF;
   vis[s] := true;
   cs[s] += 1;
   dist[s] := 0;
@@ -102,7 +103,7 @@ begin
           cs[v] += 1;
           q.EnQueue(v);
           vis[v] := true;
-          
+
           if cs[v] > n then
             Exit(false);
         end;
@@ -222,7 +223,7 @@ begin
 
   Init;
 
-  for i := 0 to High(a) do
+  for i := 0 to m - 1 do
   begin
     u := a[i, 0];
     v := a[i, 1];
