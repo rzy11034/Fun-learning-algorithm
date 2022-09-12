@@ -19,7 +19,7 @@ procedure Run;
 implementation
 
 uses
-  FLA.Algorithm_07_06;
+  FLA.Algorithm_07_08;
 
 procedure Test;
 begin
