@@ -54,7 +54,7 @@ uses
   FLA.Algorithm_07_02,
   FLA.Algorithm_07_02_01,
   FLA.Algorithm_07_03, FLA.Algorithm_07_04, FLA.Algorithm_07_04_01, FLA.Algorithm_07_05, FLA.Algorithm_07_06, FLA.Algorithm_07_07,
-FLA.Algorithm_07_08;
+FLA.Algorithm_07_08, FLA.Algorithm_07_09;
 
 begin
   try

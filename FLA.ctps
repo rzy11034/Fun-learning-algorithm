@@ -21,7 +21,6 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="10"/>
         <CursorPos X="22" Y="22"/>
         <UsageCount Value="225"/>
         <Loaded Value="True"/>
@@ -106,12 +105,11 @@
       <Unit>
         <Filename Value="Source\Chapter02\FLA.Algorithm_02_06.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="70"/>
-        <CursorPos X="27" Y="77"/>
+        <TopLine Value="16"/>
+        <CursorPos Y="38"/>
         <UsageCount Value="219"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter02\FLA.Algorithm_02_07.pas"/>
@@ -369,7 +367,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos X="34" Y="4"/>
-        <UsageCount Value="86"/>
+        <UsageCount Value="94"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_02.pas"/>
@@ -378,25 +376,25 @@
         <WindowIndex Value="0"/>
         <TopLine Value="134"/>
         <CursorPos X="14" Y="137"/>
-        <UsageCount Value="77"/>
+        <UsageCount Value="85"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_02_01.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="150"/>
+        <TopLine Value="92"/>
         <CursorPos X="42" Y="131"/>
-        <UsageCount Value="55"/>
+        <UsageCount Value="63"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_03.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="200"/>
-        <CursorPos X="29" Y="207"/>
-        <UsageCount Value="46"/>
+        <TopLine Value="69"/>
+        <CursorPos X="10" Y="75"/>
+        <UsageCount Value="54"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_04.pas"/>
@@ -405,7 +403,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="238"/>
         <CursorPos Y="88"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_04_01.pas"/>
@@ -413,7 +411,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos Y="18"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_05.pas"/>
@@ -422,7 +420,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="251"/>
         <CursorPos X="46" Y="268"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_06.pas"/>
@@ -431,16 +429,16 @@
         <WindowIndex Value="0"/>
         <TopLine Value="250"/>
         <CursorPos X="16" Y="247"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Chapter07\FLA.Algorithm_07_07.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="5"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="280"/>
+        <TopLine Value="198"/>
         <CursorPos Y="289"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="38"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -449,8 +447,18 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="273"/>
-        <CursorPos X="57" Y="283"/>
+        <TopLine Value="228"/>
+        <CursorPos X="40" Y="241"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="250"/>
+        <CursorPos Y="264"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit>
@@ -459,8 +467,8 @@
         <FRMtype Value="0"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="37"/>
-        <CursorPos X="53" Y="60"/>
+        <TopLine Value="25"/>
+        <CursorPos X="29" Y="61"/>
         <SyntaxHighlighter Value="FreePascal"/>
         <UsageCount Value="227"/>
         <Loaded Value="True"/>
@@ -471,8 +479,9 @@
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="19"/>
-        <UsageCount Value="75"/>
+        <TopLine Value="148"/>
+        <CursorPos X="15" Y="171"/>
+        <UsageCount Value="74"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
@@ -482,132 +491,80 @@
         <WindowIndex Value="0"/>
         <TopLine Value="985"/>
         <CursorPos X="48" Y="998"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
     </Units>
     <OtherDefines Count="1">
       <Define0 Value="Debug"/>
     </OtherDefines>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="16">
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="180" Column="40" TopLine="160"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="266" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="143" Column="5" TopLine="122"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="267" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="176" Column="11" TopLine="164"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="178" Column="3" TopLine="157"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="266" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="181" Column="5" TopLine="160"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="267" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="265" Column="5" TopLine="228"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="192" Column="32" TopLine="169"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="266" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="254" Column="23" TopLine="233"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="267" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="177" Column="3" TopLine="156"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="242" TopLine="223"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="262" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="243" TopLine="224"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="245" TopLine="226"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="266" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="246" TopLine="227"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="267" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="248" TopLine="232"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="250" TopLine="232"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="266" TopLine="254"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="253" TopLine="234"/>
       </Position>
       <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="267" TopLine="254"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="264" TopLine="254"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="266" TopLine="254"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="296" TopLine="275"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="259" TopLine="250"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="296" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="297" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="298" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="299" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="300" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="301" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter07\FLA.Algorithm_07_08.pas"/>
-        <Caret Line="296" TopLine="269"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter02\FLA.Algorithm_02_06.pas"/>
-        <Caret Line="26" Column="20" TopLine="20"/>
-      </Position>
-      <Position>
-        <Filename Value="Source\Chapter02\FLA.Algorithm_02_06.pas"/>
-        <Caret Line="37" Column="23" TopLine="20"/>
+        <Filename Value="Source\Chapter07\FLA.Algorithm_07_09.pas"/>
+        <Caret Line="264" TopLine="245"/>
       </Position>
     </JumpHistory>
     <RunParams>

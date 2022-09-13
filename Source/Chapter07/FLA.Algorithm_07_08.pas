@@ -238,6 +238,7 @@ begin
       Write(i, ' ');
 end;
 
+{ #todo -orzy : 结果与书上不同， 有错 }
 procedure Main;
 var
   n, m, sum, total, i, j, k, x, y: integer;
@@ -280,7 +281,7 @@ begin
           x := i + dir[k, 0];
           y := j + dir[k, 1];
 
-          if ((x <= m) and (x > 0)) and ((y <= n) and (y > 0)) then
+          if ((x <= m) and (x > 0)) and ((y <= n) and (x > 0)) then
             Add((i - 1) * n + j, (x - 1) * n + y, INF);
         end;
       end
